@@ -4,11 +4,11 @@ import css from './FeedbackOptions.module.css'
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return options.map(item => (
     <button
-      key={item[0]}
+      key={item}
       className={css.btn}
       onClick={onLeaveFeedback}
     >
-      {item[0]}
+      {item}
     </button>
   ));
 };
